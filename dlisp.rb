@@ -53,4 +53,4 @@ def global_env
   Env.new(glob.keys,glob.values,{})
 end
 
-raise call(parse("(if (> 1 0) 1 2)")).inspect
+warn call(parse("(begin (define sexy (lambda (r) (* 3.141592653 (* r r))))(if (> 1 0) (sexy 3) (quote (0))))")).inspect
