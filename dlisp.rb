@@ -60,6 +60,7 @@ def global_env
     :+ => ->(a,b){a+b}, :* => ->(a,b){a*b}, :-   => ->(a,b){a-b}, :/ => ->(a,b){a/b},
     :> => ->(a,b){a>b}, :< => ->(a,b){a<b}, :'=' => ->(a,b){a==b},
     :>= => ->(a,b){a>=b}, :<= => ->(a,b){a<=b},
+    :car => ->(a){a.first}, :cdr => ->(a){a[1..-1]}, :cons => ->(a,b){b.unshift(a)}
   }
   Env.new(glob.keys,glob.values,{})
 end
