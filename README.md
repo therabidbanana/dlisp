@@ -4,3 +4,4 @@ Playing around with building my own lisp, mainly because of reading:
 Other Notes:
 * http://norvig.com/lispy.html  
 * http://blog.fogus.me/2012/01/25/lisp-in-40-lines-of-ruby/
+* http://onestepback.org/index.cgi/Tech/Ruby/LispInRuby.red
